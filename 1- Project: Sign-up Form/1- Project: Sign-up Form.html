@@ -22,25 +22,39 @@
 
       You know you want to.
     </p>
-    <form action="">
-      <div class="form-container">
-        <legend>Let's do this!</legend>
-      <label for="first-name">FIRST NAME</label>
-      <input type="text" id="first-name"></input>
-      <label for="last-name">LAST NAME</label>
-      <input type="text" id="last-name"></input>
-      <label for="last-name">EMAIL</label>
-      <input type="email" id="email"></input>
-      <label for="phone-number">PHONE NUMBER</label>
-      <input type="text" id="phone-number"></input>
-      <label for="password">PASSWORD</label>
-      <input type="password" id="password"></input>
-      <label for="confirm-password">CONFIRM PASSWORD</label>
-      <input type="password" id="confirm-password"></input>
+    <form class="form-container" action="">
+        <legend class="form_legend">Let's do this!</legend>
+        <div class="form_grid">
+          <div class="field">
+            <label class="form_label" for="first-name">FIRST NAME</label>
+            <input type="text" id="first-name"></input>
+          </div>
+          <div class="field">
+            <label class="form_label" for="last-name">LAST NAME</label>
+            <input type="text" id="last-name"></input>
+          </div>
+          <div class="field">
+            <label class="form_label" for="last-name">EMAIL</label>
+            <input type="email" id="email"></input>
+          </div>
+          <div class="field">
+            <label class="form_label" for="phone-number">PHONE NUMBER</label>
+            <input type="text" id="phone-number"></input>
+          </div>
+          <div class="field">
+            <label class="form_label" for="password">PASSWORD</label>
+            <input type="password" id="password"></input>
+          </div>
+          <div class="field">
+            <label class="form_label" for="confirm-password">CONFIRM PASSWORD</label>
+            <input type="password" id="confirm-password"></input>
+          </div>
+
       </div>
-      <button type="submit">Create account</button>
+
     </form>
-    <p>Already have an account? <a>Log in</a></p>
+    <button type="submit">Create account</button>
+    <p class="log-in">Already have an account? <a href="#">Log in</a></p>
   </div>
 </main>
 </body>
