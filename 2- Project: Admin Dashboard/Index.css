@@ -37,6 +37,11 @@ main{
   grid-column-end: 5;
   grid-row-end: 2;
   box-shadow: 0px 5px 5px rgb(193, 192, 192);
+
+  display: grid;
+  grid-template-rows: 80px 100px;
+  justify-content: start;
+  padding: .5rem 4rem;
 }
 
 .main-content{
@@ -49,7 +54,7 @@ main{
 
 li{
   list-style: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -63,7 +68,7 @@ li{
 
 .dashboard-title{
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0;
 }
 .dashboard-title-container >img{
@@ -86,4 +91,77 @@ aside i{
 
 aside li{
   color:  white;
+}
+
+/* ESTILOS HEADER */
+.navbar{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+nav > img{
+  width: 3rem;
+  border-radius: 50%;
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+
+.navbar>i{
+  color: #e1241f;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.fa-bell{
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+.user-name{
+  display: inline;
+  font-size: 1.2rem;
+  margin: 0;
+  text-align: center;
+  grid-column-start: 6;
+  grid-column-end: 11;
+}
+.search-input{
+  background-color: rgb(199, 197, 197);
+  border-radius: 8px;
+  border: none;
+  width: 400px;
+  height: 1.5rem;
+}
+.menu > img{
+  width: 70px;
+  border-radius: 50%;
+}
+.menu{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+.user-info{
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+.hi, .user{
+  margin: 0;
+}
+.buttons{
+  grid-column-start: 7;
+  grid-column-end: 11;
+}
+
+button{
+  border: none;
+  background-color: #e1241f;
+  color: white;
+  border-radius: 1rem;
+  padding: .5rem 1.5rem;
+  cursor: pointer;
+}
+.new{
+  grid-column-start: 8;
+  grid-column-end: 9;
 }
