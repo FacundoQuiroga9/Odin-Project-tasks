@@ -11,3 +11,7 @@ Build it out so that the computer will guess if you decide to choose your own se
 If you choose to modify the rules, you can provide the computer additional information about each guess. For example, you can start by having the computer guess randomly, but keep the ones that match exactly. You can add a little bit more intelligence to the computer player so that, if the computer has guessed the right color but the wrong position, its next guess will need to include that color somewhere.
 If you want to follow the rules of the game, you’ll need to research strategies for solving Mastermind, such as this post.
 Post your solution below!
+
+HOW TO PLAY?
+
+Run the file interface.rb to play.
