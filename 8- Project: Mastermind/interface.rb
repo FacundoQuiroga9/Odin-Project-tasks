@@ -7,6 +7,7 @@ require_relative "mastermind"
   puts "Welcome to Mastermind!"
   puts "Guess the secret code in 12 turns."
   puts "Enter your guess (e.g., red green blue yellow):"
+  puts "--------------------------------------------------------------------------------"
 
   loop do
     puts "You have #{turns_left} turns left."
@@ -19,6 +20,7 @@ require_relative "mastermind"
       break
     else
       puts "Feedback: #{exact_matches} exact matches and #{color_matches} color matches."
+      puts "--------------------------------------------------------------------------------"
     end
 
     turns_left -= 1
