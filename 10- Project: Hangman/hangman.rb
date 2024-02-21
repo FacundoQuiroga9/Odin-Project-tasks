@@ -75,7 +75,7 @@ class Hangman
     return nil
   end
 
-  def playl
+  def play
     puts "Welcome to Hangman!"
     until @game_over
       puts "Word: #{display_word}"
