@@ -61,9 +61,9 @@ class Hangman
   end
 
   def self.load_game(filename)
-    serialized_game = File.read(filename)  # Leemos el contenido del archivo
-    game_data = JSON.parse(serialized_game)  # Deserializamos la cadena JSON en un objeto Ruby
-    game = Hangman.new  # Creamos una nueva instancia de Hangman
+    serialized_game = File.read(filename)  
+    game_data = JSON.parse(serialized_game)
+    game = Hangman.new
     game.secret_word = game_data["secret_word"]
     game.guessed_letters = game_data["guessed_letters"]
     game.incorrect_guesses = game_data["incorrect_guesses"]
