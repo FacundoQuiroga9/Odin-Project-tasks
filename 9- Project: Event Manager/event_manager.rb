@@ -73,6 +73,21 @@ puts "The peak registration time is at #{main_hour[0]} hours, with #{main_hour[1
 
 end
 
+def weekday_targeting(dates)
+  daily_record = Hash.new(0)
+
+dates.each do |date|
+  clean_date = Date.strptime(date, "%m/%d/%y")
+  weekday = clean_date.wday
+  daily_record[weekday] += 1
+end
+
+main_day = daily_record.max_by { |day, amount| amount }
+
+puts "The peak registration day is #{["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][main_day[0]]}, with #{main_day[1]} records."
+
+end
+
 dates = []
 
 contents.each do |row|
@@ -89,3 +104,4 @@ contents.each do |row|
 end
 
 time_targeting(dates)
+weekday_targeting(dates)
