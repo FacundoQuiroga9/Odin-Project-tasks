@@ -2,7 +2,7 @@ require 'json'
 
 class Hangman
   attr_accessor :secret_word, :guessed_letters, :incorrect_guesses, :game_over
-  
+
   def initialize
     @words = File.readlines('google-10000-english-no-swears.txt').map(&:chomp).select { |word| word.length >= 5 && word.length <= 12 }
     @secret_word = @words.sample.downcase
@@ -75,7 +75,7 @@ class Hangman
     return nil
   end
 
-  def play
+  def playl
     puts "Welcome to Hangman!"
     until @game_over
       puts "Word: #{display_word}"
