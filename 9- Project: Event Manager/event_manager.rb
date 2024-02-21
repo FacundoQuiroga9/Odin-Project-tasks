@@ -58,6 +58,23 @@ contents = CSV.open(
 template_letter = File.read('form_letter.erb')
 erb_template = ERB.new template_letter
 
+def time_targeting(dates)
+    hourly_record = Hash.new(0)
+
+  dates.each do |date|
+    registration_time = Time.strptime(date, "%m/%d/%y %H:%M").hour
+    hourly_record[registration_time] += 1
+end
+
+main_hour = hourly_record.max_by { |hora, cantidad| cantidad }
+
+
+puts "The peak registration time is at #{main_hour[0]} hours, with #{main_hour[1]} records."
+
+end
+
+dates = []
+
 contents.each do |row|
   id = row[0]
   name = row[:first_name]
@@ -65,7 +82,10 @@ contents.each do |row|
   phone_number = clean_phone_number(row[:homephone].to_s)
   legislators = legislators_by_zipcode(zipcode)
 
+  dates << row[:regdate]
   form_letter = erb_template.result(binding)
 
   save_thank_you_letter(id,form_letter)
 end
+
+time_targeting(dates)
