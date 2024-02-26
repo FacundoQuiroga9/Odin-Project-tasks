@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&display=swap" rel="stylesheet">
+<script src="./Index.js" defer></script>
+<script src="https://kit.fontawesome.com/53f544d1dd.js" crossorigin="anonymous" defer></script>
+  <title>2- Project: Admin Dashboard</title>
+</head>
+<body>
+  <main>
+    <aside class="aside">
+      <div class="dashboard-title-container">
+        <img src="./assets/River Plate.png" alt="">
+        <h4 class="dashboard-title">River Plate</h4>
+      </div>
+      <ul class="nav-options">
+        <i class="fa-solid fa-house"></i>
+        <li>Home</li>
+        <i class="fa-solid fa-user"></i>
+        <li>Profile</li>
+        <i class="fa-solid fa-message"></i>
+        <li>Messages</li>
+        <i class="fa-solid fa-clock"></i>
+        <li>History</li>
+        <i class="fa-solid fa-list-check"></i>
+        <li>Tasks</li>
+        <i class="fa-solid fa-users"></i>
+        <li>Communities</li>
+      </ul>
+      <ul class="account-options">
+        <i class="fa-solid fa-gear"></i>
+        <li>Settings</li>
+        <i class="fa-solid fa-circle-question"></i>
+        <li>Support</li>
+        <i class="fa-solid fa-lock"></i>
+        <li>Privacy</li>
+      </ul>
+    </aside>
+
+    <header class="header">
+      <nav class="navbar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input class="search-input" type="text">
+        <i class="fa-solid fa-bell"></i>
+        <img src="./assets/Facundo.png" alt="">
+        <h4 class="user-name">Facundo Quiroga</h4>
+      </nav>
+      <div class="menu">
+        <img src="./assets/Facundo.png" alt="">
+        <div class="user-info">
+          <p class="hi">Hi there,</p>
+          <h3 class="user">Facundo Quiroga</h3>
+        </div>
+          <button class="new">New</button>
+          <button class="upload">Upload</button>
+          <button class="share">Share</button>
+      </div>
+    </header>
+
+    <section class="main-content">
+      <div class="news">
+        <h4 class="news-title main-content-title">Last News</h4>
+        <div class="card">
+          <h5 class="card-title">Milagros Díaz renovó su vínculo con River</h5>
+          <p class="card-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, eveniet facilis? Vel ipsum dicta dolores.</p>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+        <div class="card">
+          <h5 class="card-title">River clasificó a la Semifinal de la Copa Federal</h5>
+          <p class="card-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor repudiandae quia qui aut expedita numquam.</p>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+        <div class="card">
+          <h5 class="card-title">Reconocimiento a González Pirez por sus 100 partidos en River</h5>
+          <p class="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, cupiditate.</p>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+        <div class="card">
+          <h5 class="card-title">Los convocados para recibir a Vélez</h5>
+          <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aliquam, voluptates veniam velit veritatis magni!</p>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+        <div class="card">
+          <h5 class="card-title">Victoria frente a San Lorenzo</h5>
+          <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor praesentium explicabo aspernatur?</p>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+        <div class="card">
+          <h5 class="card-title">River festejó en el sur con los goles de sus delanteros</h5>
+          <p class="card-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas autem vero quia eligendi dolor.</p>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+      <div class="last-results">
+        <h4 class="results-title main-content-title">Last Results</h4>
+        <div class="results-container">
+          <div class="result">
+            <img class="local-team" src="./assets/River Plate.png" alt="">
+            <h6 class="result-numbers">5-0</h6>
+            <img class="visitor-team" src="./assets/Velez.png" alt="">
+          </div>
+          <div class="result">
+            <img class="local-team" src="./assets/Barracas.svg" alt="">
+            <h6 class="result-numbers">0-2</h6>
+            <img class="visitor-team" src="./assets/River Plate.png" alt="">
+          </div>
+          <div class="result">
+            <img class="local-team" src="./assets/River Plate.png" alt="">
+              <h6 class="result-numbers">1-1</h6>
+            <img class="visitor-team" src="./assets/Argentinos.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="players">
+        <h4 class="players-title main-content-title">Players</h4>
+        <div class="players-container">
+          <div class="player">
+            <img class="player-avatar" src="./assets/armani.png" alt="">
+            <h6 class="player-name">Franco Armani</h6>
+          </div>
+          <div class="player">
+            <img class="player-avatar" src="./assets/enzo.png" alt="">
+            <h6 class="player-name">Enzo Diaz</h6>
+          </div>
+          <div class="player">
+            <img class="player-avatar" src="./assets/nacho.png" alt="">
+            <h6 class="player-name">Nacho Fernandez</h6>
+          </div>
+          <div class="player">
+            <img class="player-avatar" src="./assets/borja.png" alt="">
+            <h6 class="player-name">Miguel Borja</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
+
+Archivo css
+
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: black;
+}
+main{
+  width: 80%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+}
+.aside{
+  background-color: #242424;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 6;
+
+  display: grid;
+  grid-template-rows: 50px 300px 200px;
+  align-items: start;
+  justify-content: start;
+  padding: 1.5rem;
+  gap: 3rem;
+}
+
+.header{
+  z-index: 2;
+  background-color:white;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-column-end: 5;
+  grid-row-end: 2;
+  box-shadow: 0px 5px 5px rgb(193, 192, 192);
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: start;
+  padding: .5rem 4rem;
+}
+
+.main-content{
+  background-color: #E2E8F0;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-column-end: 5;
+  grid-row-end: 6;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, ifr);
+}
+
+li{
+  list-style: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+                                                              /* ESTILOS ASIDE */
+.dashboard-title-container{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboard-title{
+  color: white;
+  font-size: 1.2rem;
+  margin: 0;
+}
+.dashboard-title-container >img{
+  width: 20px;
+}
+
+aside i{
+  color:   #e1241f;
+  font-size: 1.5rem;
+}
+
+.nav-options, .account-options{
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 15px;
+}
+
+aside li{
+  color:  white;
+}
+
+                                                              /* ESTILOS HEADER */
+.navbar{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+nav > img{
+  width: 3rem;
+  border-radius: 50%;
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+
+.navbar>i{
+  color: #e1241f;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.fa-bell{
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+.user-name{
+  display: inline;
+  font-size: 1.2rem;
+  margin: 0;
+  text-align: center;
+  grid-column-start: 6;
+  grid-column-end: 11;
+}
+.search-input{
+  background-color: rgb(226, 224, 224);
+  border-radius: 8px;
+  border: #e1241f 1px solid;
+  width: 400px;
+  padding: .4rem;
+}
+.search-input:focus{
+  border: #e1241f
+}
+.menu > img{
+  width: 60px;
+  border-radius: 100%;
+  border:#e1241f 5px solid;
+}
+.menu{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+.user-info{
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+.hi, .user{
+  margin: 0;
+}
+.buttons{
+  grid-column-start: 7;
+  grid-column-end: 11;
+}
+
+button{
+  border: none;
+  background-color: #e1241f;
+  color: white;
+  border-radius: 1rem;
+  padding: .5rem 1.5rem;
+  cursor: pointer;
+}
+.new{
+  grid-column-start: 8;
+  grid-column-end: 9;
+}
+
+                                                              /* ESTILOS MAIN CONTENT */
+
+.news{
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 11;
+  display: grid;
+  grid-template-columns: 1fr ,1fr;
+  grid-template-rows: 40px 1fr 1fr 1fr ;
+  gap: 10px;
+  align-items: center;
+  justify-content: start;
+  padding: 1rem;
+}
+
+.news-title{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+}
+.main-content-title{
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+}
+
+.card{
+  background-color: #fefefe;
+  width: 18rem;
+  height: 100%;
+  border-radius: 10px;
+  border-left: 10px solid #e1241f;
+  box-shadow: 5px 5px 5px rgb(193, 192, 192);
+  position: relative;
+  cursor: pointer;
+
+}
+.card:hover{
+  box-shadow: 5px 5px 5px rgb(145, 144, 144);
+  transition: all .25s ease-in;
+}
+.card-title{
+  font-size: 1rem;
+  margin: .5rem 1rem;
+}
+.card-content{
+  margin: .5rem 1rem;
+  font-size: .9rem;
+}
+.card>i{
+  color: #1f1f1f;
+  margin: .5rem 1rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+.card>i:hover{
+  color: #e1241f;
+}
+
+
+
+.last-results{
+  grid-column-start: 9;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 6;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 1fr;
+  padding: 1rem 1rem 0 1rem;
+  gap: 10px;
+  align-items: center;
+}
+
+.results-title{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.results-container{
+  background-color: white;
+  box-shadow: 5px 5px 5px rgb(193, 192, 192);
+  border-radius: 10px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self: self-start;
+
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+}
+.result{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.result-numbers{
+  margin: 0 1rem;
+  font-size: 2rem;
+}
+
+.local-team, .visitor-team{
+  width: 40px;
+}
+
+.players{
+  grid-column-start: 9;
+  grid-column-end: 13;
+  grid-row-start: 6;
+  grid-row-end: 11;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 1fr;
+  padding: 1rem;
+  align-items: center;
+}
+.players-title{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-bottom: 0;
+}
+.players-container{
+  background-color: white;
+  box-shadow: 5px 5px 5px rgb(193, 192, 192);
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
+  padding: .5rem;
+}
+.player{
+  display: flex;
+  align-items: center;
+}
+.player-avatar{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: .5rem;
+}
+.player-name{
+  font-size: .9rem;
+  margin: 0;
+}
